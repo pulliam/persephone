@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Alderaan</title>
+  <link rel="stylesheet" href="css/pure.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="javascript/jquery.js"></script>
+</head>
+<body class="space">
+
+  <div class="top-bar flash"></div>
+
+  <div id="alderaan" class="planet">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/hidden -->
+    <p class="planet-name" hidden>Alderaan</p>
+  </div>
+
+  <div id="death-star" class="planet">
+    <p class="planet-name" hidden>Death Star</p>
+  </div>
+
+  <a href="/confessions" id="tell" class="pure-button">Tell!</a>
+
+  <form method="POST" action="/confessions" class="pure-form">
+    <button id="never" class="pure-button">Never</button>
+  </form>
+
+  <form method="POST" action="/coordinates" id="secret-coordinates" class="pure-form" hidden>
+    <input type="text" name="location" placeholder="Secret Coorindates">
+  </form>
+
+  <form method="POST" action="/messages" id="secret-message" class="pure-form" hidden>
+    <input type="text" name="plea" placeholder="Secret Message">
+  </form>
+
+  <script src="javascript/main.js"></script>
+</body>
+</html>

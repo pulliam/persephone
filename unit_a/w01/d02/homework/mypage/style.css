@@ -1,0 +1,74 @@
+body {
+	background-color: rgb(68, 9, 14);
+}
+
+.header {
+	background: url("http://www.spirit1059.com/pics/Feeds/Articles/2015611/118317/Beach.jpg");
+	color: rgb(68, 9, 14);
+	font-family: cursive, arial, georgia, roman, sans;
+	font-weight: 100; /*I can make this bold bolder lighter or normal*/
+	font-size: 10px;
+	font-style: normal;
+	padding: 60px 14px;
+	text-align: center;
+	margin: 60px auto 50px auto;
+	border-radius: 12px;
+	border: double white 10px;
+	background-size: cover;
+	width: 600px;
+}
+
+.main-content {
+	line-height: 1.2;
+	font-size: 12px;
+	font-weight: normal;
+	background-color: rgba(68, 9, 14, 1.0);
+	border: rgba(225, 225, 225, 1.0) 4px dotted;
+	font-family: cursive, arial, georgia, roman, sans;
+	border-radius: 15px;
+	list-style-type: georgian; /*Type you want for your list. all values are here: https://css-tricks.com/almanac/properties/l/list-style/*/
+	width: 300px;
+	margin: 5px auto 50px auto;
+	padding: 14px;
+	color: #FFFFFF;
+
+}
+
+h1 {
+	text-align: center;
+}
+
+img {
+
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	padding: 2px;
+
+}
+
+a:hover {
+	color: black;
+	background-color: white;
+}
+
+.footer {
+	text-align: center;
+	margin: 20px auto;
+	padding: 5px;
+	border-style: inset;
+	width: 490px
+}
+
+p { 
+	font-size: 15px;
+	font-weight: bolder;
+	}
+
+span {
+	color: gray;
+	font-style: italic;
+	font-size: 19px;
+}

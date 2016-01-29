@@ -1,0 +1,24 @@
+<div class="list-of-articles-all">	
+	<h2>Select Article</h2>
+
+	<div class="btn-group btn-group-sm" role="group" aria-label="...">
+		<form style="float: left;" action="/articles/ordered/time_created" method="GET"><button class="btn btn-default" type="submit">Most Recent</button></form>
+		<form style="float: left;" action="/articles/ordered/name" method="GET"><button class="btn btn-default" type="submit">By Name</button></form>
+		<form style="float: left;" action="/categories" method="GET"><button class="btn btn-default" type="submit">See All Categories</button></form>
+	</div>
+</div>
+
+<!-- List of Articles -->
+<div class="list-of-articles-body">
+		<% @articles.each do |article| %>
+        <div class="thumbnail images-boxes-style">
+			<a href="/articles/<%= article.id %>">
+			<img data-src="holder.js/300x200" alt="300x200" style="max-height: 100px;" src="<%= article.gif %>" class="img-responsive img-rounded"></a>
+        	<div class="caption">
+				<a href="/articles/<%= article.id %>"><p><%= article.name %></p></a>
+       		</div>  
+		</div>
+
+		<% end %>
+<!--/List of Articles -->
+</div>

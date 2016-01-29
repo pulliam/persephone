@@ -1,0 +1,97 @@
+body {
+    background-color: salmon;
+    font-family: 'Courier new', sans-serif;
+}
+
+header {
+    background-color: #369;
+    padding: 20px;
+    margin: 12px auto;
+    color: #FFF;
+    text-align: center;
+}
+
+#glass {
+    display: inline-block;
+    border: 1px solid #CCC;
+    height: 400px;
+    width: 150px;
+    border-radius: 5px 5px 10px 10px;
+    position: relative;
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(255,255,255,0.5));
+
+}
+#glass:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 4px;
+    width: 90%;
+    height: 3px;
+    border: 2px solid #FFF;
+    border-radius: 50%;
+}
+
+#glass:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 4px;
+    width: 90%;
+    height: 393px;
+    border: 3px double #CCC;
+    border-radius: 5px;
+    background-image: linear-gradient(90deg, rgba(100, 100, 255, 0.1), rgba(255,255,255,1), rgba(0,0,0,0), rgba(0, 0, 200, 0.1), rgba(170, 200, 255, 0.25),rgba(10, 100, 255, 0.1));
+}
+
+#water {
+    border: 2px solid #BBF;
+    border-top: 3px double aliceblue;
+    height: 20px;
+    position: absolute;
+    bottom: 7px;
+    left:8px;
+    width: 86%;
+    border-radius: 5px;
+    background-image: linear-gradient(rgba(100,175,255, 0.5), rgba(75,105,200,0.5));
+    transition: all 1s;
+
+}
+
+.ruler {
+    border-radius: 3px;
+    display: inline-block;
+    height: 400px;
+    width: 62px;
+    background-image: url('img/ruler_20cm.png');
+    background-size: contain
+}
+
+.challenge {
+    background-color: #FFF;
+    padding: 20px;
+    border: 2px solid #EEE;
+    border-radius: 5px;
+}
+#pop-over {
+    background-color: lightgoldenrodyellow;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    border: 1px solid yellow;
+}
+#pop-over h3 {
+    font-family: Helvetica;
+    padding: 0.5em;
+    display: block;
+    background-color: red;
+    color: #fff;
+}
+#pop-over img {
+    height: 150px;
+}
+#pop-over p {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+}

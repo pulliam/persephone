@@ -1,0 +1,8 @@
+# Oregon Trail V1
+
+## Objective
+
+- Solidify understanding of Rails Routes
+- Solidify understanding of Rails Controllers
+
+The controllers to our Oregon Trail have been stolen by gremlins. Look through the rest of the app to figure out which controllers and controller actions are necessary and write them.

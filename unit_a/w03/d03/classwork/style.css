@@ -1,0 +1,29 @@
+body{
+	background-color: blue;
+}
+
+#header {
+	color: gray;
+	text-align: center;
+	font-family: comic;
+	margin-top: 170px;
+	font-size: 25px;
+}
+
+#quote {
+	color: gray;
+	font-size: 21px;
+	font-family: cursive;
+	text-align: center;
+	margin-top: 170px;
+}
+
+#buttons {
+	width: 437px;
+	margin: 50px auto;
+}
+
+button {
+	background-color: gray;
+		color: pink;
+}

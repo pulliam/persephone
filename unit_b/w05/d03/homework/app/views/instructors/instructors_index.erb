@@ -1,0 +1,23 @@
+<h1>WDI Instructors</h1>
+<ul>
+<% @instructors.each do |hash| %>
+	<li>
+		<b>Name:</b> <%= hash[:name].capitalize %>
+		<br/>
+		<b>Code Name:</b> <%= hash[:codename].capitalize %>
+		<br/>
+		<b>Super Power:</b> <%= hash[:superpower].capitalize %>
+		<br/>
+		<b>Weapon:</b> <%= hash[:weapon].capitalize %>
+		<br/>
+		<b>Weakness:</b> <span><% hash[:weaknesses].each do |listing| %>
+          <%= listing.capitalize %>
+        </span> <% end %>
+        <br/>
+		<b>Undercover:</b> <%= hash[:undercover] %>
+		<br/>
+		<a href="./instructors/<%=hash[:name]%>"><b>Check This One Out!</b></a>
+	</li>
+	</br>
+<%end%>
+</ul>

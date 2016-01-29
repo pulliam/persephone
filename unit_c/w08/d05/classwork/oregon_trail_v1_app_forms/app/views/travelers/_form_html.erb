@@ -1,0 +1,6 @@
+<%= form_for(@traveler, {html: {class: "traveler-form"}}) do |f| %>
+	<%= f.text_field :name %>
+	<%= f.number_field :weight %>
+	<%= f.number_field :health %>
+	<%= f.submit %>
+<% end %>

@@ -1,0 +1,7 @@
+<h1>Here are the Houses</h1>
+<ul>
+<% @houses.each do |house| %>
+<a href="./house/<%= house["id"]%>">
+<img style="display: inline" src="<%= house["image_url"] %>"></a>
+<%end%>
+</ul>

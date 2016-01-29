@@ -1,0 +1,17 @@
+{
+  "name": "homework",
+  "version": "1.0.0",
+  "description": "![beeees](https://s-media-cache-ak0.pinimg.com/236x/26/e7/34/26e734b3267edcd249662f88a7bdd5d9.jpg)",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "ejs": "^2.3.4",
+    "express": "^4.13.3",
+    "semantic-ui": "^2.1.8"
+  }
+}

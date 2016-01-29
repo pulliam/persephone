@@ -1,0 +1,24 @@
+<!-- GET '/greet/taylor?time=evening' HTTP/1.1 -->
+<!--/greet/taylor?time=evening&jquery=true-->
+<% if params[:jquery] && params[:time] == 'evening' %>
+
+	<title>Good Evening! <%=params[:time].capitalize %> IF</title>
+    <script src="../js/jquery.js"></script>
+  	</head>
+  	<body>
+  	<button>click</button>
+  	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script>
+      $('button').on('click', function(event){
+        console.log('Evening, Taylor!')
+      });
+    </script>
+
+<% elsif params[:time] == 'evening' || params[:time] == 'morning' || params[:time] == 'afternoon' %>
+	<title>Good <%=params[:time].capitalize %> Elsif</title>
+  	</head>
+  	<body>
+    <h1><%=params[:time].delete('g').capitalize %>' Taylor!</h1>
+<% end %>
+
+

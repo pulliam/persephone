@@ -1,0 +1,43 @@
+body {
+	background-color: white;
+}
+
+#header {
+	color: gray;
+	font-size: 22px;
+	text-align: center;
+	font-family: arial;
+}
+
+.accounts{
+	width: 600px;
+	margin: 0px auto;
+}
+
+.box {
+	float: left;
+	width: 298px;
+	text-align: center;
+	margin-top: 30px;
+	color: gray;
+	border: 1px double gray;
+	height: 300px;
+}
+
+.money {
+	width: 200px;
+	font-size: 45px;
+	height: 150px;
+	border: 1px double gray;
+	margin: 30px auto;
+	color: gray;
+	padding: 50px 0px 0px 0px;
+}
+
+button {
+	color: gray;
+}
+
+.accounts-footer {
+	margin: 20px auto;
+}

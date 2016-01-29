@@ -1,0 +1,28 @@
+.box {
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: Helvetica;
+  line-height: 3em;
+  min-height: 150px;
+}
+.red {
+  background: red;
+  height: 300px;
+}
+.orange {
+  background: orange;
+}
+.yellow {
+  background: yellow;
+}
+.green {
+  background: yellowgreen;
+}
+.blue {
+  background: deepskyblue;
+}
+.purple {
+  background: rebeccapurple;
+}

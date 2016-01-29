@@ -1,0 +1,26 @@
+<h2>New Poster Generated!</h2>
+<div class="poster">
+  <div class="poster-img">
+    <img src="<%= @movie_info["Poster"] %>" alt="">
+  </div>
+  <div class="movie-info">
+    <h2><%= @movie_info["Title"] %></h2>
+    <p>Year: <%= @movie_info["Year"] %></p>
+    <p>Rating: <%= @movie_info["Rated"] %></p>
+    <p>Runtime: <%= @movie_info["Runtime"] %></p>
+    <p>Starring: <%= @movie_info["Actors"] %></p>
+
+    <%= form_tag "/movies", method: "post" do %>
+      <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+      <input type="hidden" name="title" value="<%= @movie_info["Title"] %> ">
+      <input type="hidden" name="release_year" value="<%= @movie_info["Year"] %> ">
+      <input type="hidden" name="rating" value="<%= @movie_info["Rated"] %> ">
+      <input type="hidden" name="runtime" value="<%= @movie_info["Runtime"] %> ">
+      <input type="hidden" name="img_url" value="<%= @movie_info["Poster"] %> ">
+      <input type="hidden" name="actor_1" value="<%= @movie_info["Actors"] %> ">
+      <button>Add Movie to Now Playing</button>
+    <% end %>
+
+    <a href="/">Cancel</a>
+  </div>
+</div>

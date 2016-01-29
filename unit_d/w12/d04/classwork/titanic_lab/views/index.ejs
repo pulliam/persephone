@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TITANIC</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+	<script src="main.js"></script>
+</head>
+<body>
+
+	<h1>TITANIC</h1>
+	<a id="manifest" href="/">MANIFEST</a> | 
+	<a id="iceberg" href="/iceberg">ICEBERG</a>
+
+	<script id="manifest-temp" type="x-template">
+  		<div class="entry">
+    		<h1>{{name}}</h1>
+     		<li>From: {{hometown}}</li>
+     		<li>Age: {{age}}</li>
+     		</ul>
+  		</div>
+	</script>
+
+</body>
+</html>

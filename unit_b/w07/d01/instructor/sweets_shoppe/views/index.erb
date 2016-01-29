@@ -1,0 +1,9 @@
+<h1>Welcome to Sung's Sassy Sweets Shoppe!!! <3</h1>
+
+<ol>
+<% @results.each do |sweet| %>
+    <li><a href="/sweets/<%= sweet["id"] %>"><%= sweet["name"].capitalize %></a></li>
+<% end %>
+</ol>
+
+<a href="/sweets/new">Add a sweeeet</a>

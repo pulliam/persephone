@@ -1,0 +1,42 @@
+body {
+  background: white;
+}
+
+.top-bar {
+    transition: top 800ms;
+    height: 50px;
+    width: 400px;
+    margin-top: 0px;
+    background-color: yellow;
+    color: black;
+}
+
+/*.top-bar.show {
+    https://developer.mozilla.org/en-US/docs/Web/CSS/transition
+    transition: top 800ms;
+    top: 0;
+}*/
+
+.planet {
+    width: 100px;
+    height: 100px;
+    background: blue;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+.planet-name {
+    color: blue;
+    margin-top: 10px;
+    padding-top: 40px;
+    padding-left: 15px;
+}
+
+.planet-name:hover {
+    color: white;
+    margin-top: 10px;
+    padding-top: 40px;
+    padding-left: 15px;
+}

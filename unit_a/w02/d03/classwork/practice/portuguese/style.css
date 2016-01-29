@@ -1,0 +1,18 @@
+
+button {
+	background-color: red;
+	color: yellow;
+	font-size: 24px;
+	font-weight: bold;
+	border: 5px dotted blue;
+	margin: 12% 35%;
+	width: 350px;
+}
+
+body {
+	background-image: url('http://www.myfreephotoshop.com/wp-content/uploads/2013/08/613.jpg');
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+ 	 background-size: cover;
+}

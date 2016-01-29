@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Landmarks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Mile Marker</th>
+      <th colspan="1"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @landmarks.each do |landmark| %>
+      <tr>
+        <td><%= landmark.name %></td>
+        <td><%= landmark.mile_marker %></td>
+        <td><%= link_to 'Show', landmark %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>

@@ -1,0 +1,6 @@
+<h2>Add a New Movie Here!</h2>
+<%= form_for @movie html: {method: "get"} do %>
+  <%= label_tag(:q, "Title:") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Search") %>
+<% end %>

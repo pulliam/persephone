@@ -1,0 +1,16 @@
+<div class="poster">
+  <div class="poster-img">
+    <img src="<%= @movie.img_url %>" alt="">
+  </div>
+  <div class="movie-info">
+    <h2><%= @movie.title %></h2>
+    <p>Year: <%= @movie.release_year %></p>
+    <p>Rating: <%= @movie.rating %></p>
+    <p>Runtime: <%= @movie.runtime %></p>
+    <p>Starring: <%= @movie.actor_1 %></p>
+    <%= form_for @movie, url: movie_path(@movie), html: {method: "delete"} do |f| %>
+      <%=f.submit "Remove From Now Playing" %>
+    <% end %>
+    <a href="/movies">Back</a>
+  </div>
+</div>

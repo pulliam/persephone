@@ -1,0 +1,31 @@
+<h1>Here are the guests</h1>
+
+<a href="/new_entry">Sign It!</a>
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+<ul>
+<% @entries.each do |entry| %>
+  <li>
+    <!--   <a href="mailto:phil@phil.com">Phil</a> -->
+    <a href="mailto:<%= entry[:email] %>"> <%= entry[:name] %></a>
+    <p><%= entry[:message] %></p>
+  </li>
+<% end %>
+</ul>
+=======
+=======
+>>>>>>> 59779278ed1d3b300a0f6812d7e6dd138a8cb23a
+<% @entries.each do |entry| %>
+
+
+<!--   <a href="mailto:phil@phil.com">Phil</a>
+ -->
+ <a href="mailto:<%= entry[:email] %>"> <%= entry[:name] %></a>
+  <p><%= entry[:message] %></p>
+
+<% end %>
+<<<<<<< HEAD
+>>>>>>> 59779278ed1d3b300a0f6812d7e6dd138a8cb23a
+=======
+>>>>>>> 59779278ed1d3b300a0f6812d7e6dd138a8cb23a

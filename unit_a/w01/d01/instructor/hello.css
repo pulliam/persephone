@@ -1,0 +1,117 @@
+/* Well, hello there! Welcome to the CSS stylesheet. */
+
+/* Now go do your homework. */
+
+body {
+  font-size: 16px;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+header {
+  width: 620px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+header img {
+  padding: 2rem;
+}
+
+h1, h2 {
+  color: #e85700;
+  font-weight: lighter;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.15rem
+}
+
+p {
+  color: #AAA;
+  font-weight: lighter;
+}
+
+div {
+  width: 1000px;
+  margin: 0 auto;
+  padding:0;
+}
+
+div > div {
+  box-sizing: border-box;
+  width: 49%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+div > div img {
+  border: 1px solid #DDD;
+  padding: 1em;
+  margin: 0em;
+  width: 80%;
+}
+
+div > div:first-child img {
+  padding: 1.4em 1em;
+}
+
+form {
+  box-sizing: border-box;
+  width: 700px;
+  margin: 3em auto;
+  background: #EEE;
+  border-radius: 0.25em;
+  padding: 1.75em;
+}
+
+form input, form button {
+  box-sizing: border-box;
+  margin: 0 -.15em;
+  border: 1px solid #e85700;
+  vertical-align: top;
+  font-size: 1.25em;
+}
+
+
+form input {
+  width: 60%;
+  border-radius: 0.25em 0 0 0.25em;
+  padding: .85em;
+}
+
+form button {
+  background: #e85700;
+  width: 40%;
+  color: #FFF;
+  padding: .85em;
+  border-radius: 0 0.25em 0.25em 0;
+}
+
+footer {
+  background: #EEE;
+  width: 100%;
+  text-align: center;
+}
+
+footer ul {
+  margin: 0 auto;
+}
+
+footer ul li {
+  display: inline-block;
+  padding: 1em;
+  margin: 0;
+  list-style: none;
+  text-transform: uppercase;
+  color: #e85700;
+}
+
+footer ul p:last-child {
+  color: #999;
+  text-transform: none;
+}

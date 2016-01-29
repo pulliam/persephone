@@ -1,0 +1,126 @@
+body {
+  font-family: Helvetica;
+  /* Sets the basis for the em measurement for the whole document */
+  font-size: 12px;
+}
+
+
+/* Consider adjusting the maximum size and positioning of your wrapper div. */
+/*.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+*/
+/* Set the box-sizing of the elements listed below to border-box by default. */
+img, div, ul, article, nav, section {
+    box-sizing:border-box;
+}
+
+/* Temporary borders to help with development */
+nav, section {
+  border: 1px solid #CCC;
+}
+
+/* Nav styles */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+.logo {
+  width: 20%;
+}
+.logo img {
+  max-width: 100%;
+  max-height: 75px;
+}
+ul.nav-links {
+  display: flex;
+  list-style-type: none;   
+}
+ul.nav-links li {
+  padding: 1em;
+  font-size: 20px
+}
+
+/* Styles for Welcome Page */
+
+.welcome {
+  border: 1px solid red;
+  margin: 7em auto;
+  width: 50%;
+  background-color: #CCC;
+  text-align: center;
+  padding: 2em;
+}
+.welcome h1 {
+  font-size: 4em;
+  margin: 1em;
+}
+.welcome h2 {
+  font-size: 2em;
+  margin: 2em;
+}
+
+/* Styles for List Page */
+
+.sidebar {
+  background-color: #CCC;
+  align-items: center;
+}
+
+.category-links {
+  padding: 1em;
+  font-size: 1.25em;
+}
+.list-display {
+  align-items:flex-start;
+}
+.card {
+  border: 1px solid #555;
+  margin: 0.25em;
+  border-radius: 7px;
+  padding: 0.25em;
+  text-align: center;
+}
+
+.card img {
+  max-width:80%;
+  padding: 1em;
+}
+
+/* Detail Page CSS */
+
+/* Styling right-hand section contents */
+
+.details {
+  /* Wow, cool! Using ems AND percentages to define padding!!! */
+  padding: 1em 10%;
+}
+
+.details h1 {
+  font-size: 4em;
+}
+.details h2 {
+  font-size: 3em;
+}
+/* Styling right-hand section contents */
+.photo {
+  text-align: center;
+}
+
+.photo img {
+  max-width:80%;
+  padding: 1em;
+  max-height: 400px;
+}
+
+.photo button {
+  display: block;
+  margin: 0.5em auto;
+  padding: 1em;
+  background-color: #FFF;
+  border: 1px solid #CCC;
+  width: 30%;
+}

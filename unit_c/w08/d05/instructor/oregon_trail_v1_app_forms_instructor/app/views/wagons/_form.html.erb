@@ -1,0 +1,6 @@
+<%= form_for [@party, @wagon] do |f| %>
+  <%= f.number_field :speed %>
+  <%= f.number_field :max_weight %>
+  <%= f.number_field :num_oxen, placeholder: "4" %>
+  <%= f.submit %>
+<% end %>

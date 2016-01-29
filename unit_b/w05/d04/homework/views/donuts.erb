@@ -1,0 +1,10 @@
+<img src="../img/dough_logo.png">
+
+<% if @donut %>
+<div>
+<h1><%= @donut[:flavor] %> $<%= @donut[:price] %>.00</h1>
+<br>
+</div>
+<% else %>
+<h1>404 Not Found</h1>
+<% end %>

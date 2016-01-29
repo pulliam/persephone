@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Moma App</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<p><a href="/artists">ARTISTS</a></p>
+<p><a href="/paintings">PAINTINGS</a></p>
+
+<h1> MOMA </h1>
+
+<%= yield %>
+
+</body>
+</html>

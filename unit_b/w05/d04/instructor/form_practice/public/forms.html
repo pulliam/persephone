@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Forms</title>
+</head>
+<body>
+  <h1>Hello from "forms.html"</h1>
+
+
+  <!-- method and action attributes -->
+  <!-- if i don't include method or action it
+  does a GET request back to itself
+   -->
+<!--
+  POST /secretbank HTTP/1.1
+   Host: localhost:9292
+
+   name=paulsimon
+  -->
+  <form method="POST" action="/secretbank">
+    <input placeholder="enter your password" type="password" name="pass">
+    <input type="submit" value="Click me">
+    <!-- <button>Click me</button> -->
+  </form>
+
+
+  <form method="POST" action="/exgirlfriends">
+    <input type="text" name="name">
+    <input type="text" name="reason">
+    <input type="submit" value="break up!">
+  </form>
+  <!-- Does this print params from our request? -->
+  <p>Params: <%= params %></p>
+</body>
+</html>

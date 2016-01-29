@@ -1,0 +1,12 @@
+<h1>Your movie is:</h1>
+<% if @tom %>
+<ul>
+	<li>
+		Movie: <%= @tom[1] %>
+		<br/>
+		Role: <%= @tom[0].capitalize %>
+	</li>
+</ul>
+<% else %>
+<p>Sorry! We don't have this movie on the catalogue.</p>
+<% end %>

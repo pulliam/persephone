@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MovieApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Welcome to the Müvie Haus!</h1>
+      <ul>
+        <li><a href="/">Add Movie</a></li>
+        <li><a href="/movies">Now Playing</a></li>
+      </ul>
+    </header>
+    <div class="content">
+      
+    <%= yield %>
+
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+.square {
+  width: 100px;
+  height: 100px;
+  display: block;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 5em;
+  font-weight: 800;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.white {
+  background-color: white;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.hidden {
+  visibility: hidden;
+}

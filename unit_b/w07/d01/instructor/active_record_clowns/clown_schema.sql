@@ -1,0 +1,15 @@
+DROP TABLE IF EXISTS cars;
+DROP TABLE IF EXISTS clowns;
+
+CREATE TABLE clowns (
+  id INTEGER PRIMARY KEY,
+  name VARCHAR,
+  nose_color VARCHAR,
+  shoe_size INTEGER,
+  car_id INTEGER REFERENCES cars(id)
+);
+
+CREATE TABLE cars (
+  id INTEGER PRIMARY KEY,
+  name VARCHAR
+);

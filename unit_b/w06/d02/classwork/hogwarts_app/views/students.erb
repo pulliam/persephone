@@ -1,0 +1,14 @@
+<% unless params[:name_new] == nil %>
+<h1>Welcome to Hogwarts <%= params[:name_new] %>!</h1>
+<h2>You've been sorted into the house <%= @house[0]["name"] %></h2>
+<img src="<%= @house[0]["image_url"] %>">
+<% end %>
+
+<h1>All our Students are:</h1>
+<ul>
+<% @students.each do |student| %>
+<li><%= student["name"] %></li>
+<%end%>
+</ul>
+<a href="/">Back to Main</a>
+<a href="/houses">Back to Houses</a>

@@ -1,0 +1,15 @@
+{
+  "name": "request_activities",
+  "version": "1.0.0",
+  "description": "Create new JavaScript files for each then require them in `index.js`.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.67.0"
+  }
+}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>XIS!</title>
+</head>
+<body>
+
+<% xises.forEach(function(xis) { %>
+	<a href="/cheeses/<%= xis._id %>">
+	<%= xis.name %>,
+	<%= xis.color %>,
+	<%= xis.origin %>.<br>
+	</a>
+<% }) %>
+
+</body>
+</html>

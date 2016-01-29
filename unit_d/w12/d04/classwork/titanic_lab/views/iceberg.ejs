@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ICEBERG</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+	<script src="main.js"></script>
+</head>
+<body>
+
+<a id="lookout" href="/">LOOK OUT!</a>
+
+	<script id="iceberg-temp" type="x-template">
+  		<div class="entry">
+  			<form method="/new" action="POST">
+  				<input name="deleteit" value="">
+    			<input type="submit" name="deleteit" value="{{ name }}">
+    		</form>
+  		</div>
+	</script>
+
+</body>
+</html>

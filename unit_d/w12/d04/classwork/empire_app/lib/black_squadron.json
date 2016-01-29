@@ -1,0 +1,26 @@
+[
+  {
+    "squadron": "Black",
+    "id": 1,
+    "callSign": "Black Leader",
+    "name": "Darth Vader"
+  },
+  {
+    "squadron": "Black",
+    "id": 2,
+    "callSign": "Mauler",
+    "name": "DS-61-2"
+  },
+  {
+    "squadron": "Black",
+    "id": 3,
+    "callSign": "Backstabber",
+    "name": "DS-61-3"
+  },
+  {
+    "squadron": "Black",
+    "id": 4,
+    "callSign": "Dark Curse",
+    "name": "DS-61-4"
+  }
+]

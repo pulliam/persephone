@@ -1,0 +1,10 @@
+<h1>Movies!</h1>
+<ul>
+<% @tom.each do |movie| %>
+	<li>
+		Movie: <%= movie[1] %>
+		<br/>
+		Role: <%= movie[0].capitalize %>
+	</li>
+<%end%>
+</ul>

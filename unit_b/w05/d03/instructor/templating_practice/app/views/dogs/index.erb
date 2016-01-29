@@ -1,0 +1,12 @@
+<h1>Doggies in Heaven:</h1>
+<ul>
+  <% @dogs.each do |dog| %>
+    <li>
+      Name: <%= dog["name"] %>
+      <br/>
+      Breed: <%= dog["breed"] %>
+      <br/>
+      Sex: <%= dog["sex"] %>
+    </li>
+  <% end %>
+</ul>

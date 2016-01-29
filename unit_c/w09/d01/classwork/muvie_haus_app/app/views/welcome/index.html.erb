@@ -1,0 +1,4 @@
+<h1>WELCOME</h1>
+
+<p><%= link_to "All Movies", movies_path %></p>
+<p><%= link_to_if(@current_user.nil?, "Login", { controller: "sessions", action: "new" }) %></p>

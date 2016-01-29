@@ -1,0 +1,11 @@
+<h1><%= @band.name %></h1>
+<% @band.genres.each do |genre| %>
+  <%= genre.name %>
+<% end %>
+
+<h2>Shows</h2>
+<ul>
+<% @band.events.each do |event| %>
+  <li><%= link_to event.venue.name, event.venue %> <%= event.performs_on %></li>
+<% end %>
+</ul>

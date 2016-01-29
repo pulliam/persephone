@@ -1,0 +1,5 @@
+<h1><%= @kitten["name"] %></h1>
+<img src="<%= @kitten["img_url"] %>" alt="meow">
+<p>Age: <%= @kitten["age"] %> Fuzziness: <%= @kitten["fuzziness"] %></p>
+<p><a href="/kittens">Back to kittens</a></p>
+<p><a href="/kittens/<%= @kitten["id"] %>/edit">Edit or Delete Kitten</a></p>

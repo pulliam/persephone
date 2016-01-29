@@ -1,0 +1,4 @@
+<% @users.each do |user| %>
+  <img class="sml-img" src="<%= user.avatar_img_url %>" alt="<%= user.name %>">
+  <a href="/users/<%= user.id %>"><%= user.name %></a>
+<% end %>

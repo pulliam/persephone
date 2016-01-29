@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hello</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
+  <script src="jquery.js"></script>
+</head>
+<body>
+
+  <h1><%= greeting %></h1>
+  <button id="leo-me">Leo Me</button>
+  <button id="random-color">color Me</button>
+  <button id="handle-me">handle Me</button>
+
+  <!-- Handle Bars Template -->
+  <script id="entry-template" type="text/x-handlebars-template">
+    <div class="entry">
+      <h1>{{greeting}}</h1>
+    </div>
+  </script>
+
+  <script src="main.js"></script>
+</body>
+</html>

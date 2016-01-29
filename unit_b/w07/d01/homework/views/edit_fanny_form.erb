@@ -1,0 +1,11 @@
+<form method="POST" action="/fanny_packs/<%= @fanny_pack.id %>">
+  <label for="fanny_color">Color</label>
+  <input type="text" id="fanny_color" name="color" value="<%= @fanny.color %>">
+  <label for="fanny_material">Material</label>
+  <input type="text" id="fanny_material" name="material" value="<%= @fanny_pack.material %>">
+  <label for="fanny_img">Image URL</label>
+  <input type="text" id="fanny_img" name="img_url" value="<%= @fanny_pack.img_url %>">
+  <input type="submit" value="Update">
+</form>
+
+

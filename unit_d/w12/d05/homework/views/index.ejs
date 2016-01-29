@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BEEZ</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+	<script src="main.js"></script>
+</head>
+<body>
+
+	<h1>BEEZHIVEZZZ</h1>
+	<a id="see-all-beez" href="/">ALL HIVES</a> | 
+	<a id="see-create-beez" href="/">CREATE NEW HIVE</a>
+
+	<div id="create-new-buzz">
+		<form action="POST" method="/beez">
+			<input type="text" name="id" placeholder="ID">
+			<input type="text" name="num_bees" placeholder="How many Bees?">
+			<input type="text" name="location" placeholder="Location">
+			<input type="text" name="notes" placeholder="Notes">
+			<input type="submit">
+		</form>
+	</div>
+
+	<script id="templatez-one" type="x-template">
+  		<div class="entry">
+    		<h1>Id: {{id}}</h1>
+     		<li>How many Buzzes: {{num_bees}}</li>
+     		<li>Locatezzz at: {{location}}</li>
+     		<li>Notezz: {{notes}}</li>
+     		</ul>
+  		</div>
+	</script>
+
+</body>
+</html>

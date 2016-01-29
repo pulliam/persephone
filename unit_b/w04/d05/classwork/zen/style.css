@@ -1,0 +1,94 @@
+* {
+	color: gray;
+	text-align: center;
+	font-family: 'Poiret One', cursive;
+	text-decoration: none;
+	list-style-type: none;
+	width: 1250px;
+	margin: 0px auto;
+}
+
+body {
+	background-color: white;
+}
+
+header{
+	color: gray;
+	text-align: center;
+	font-size: 19px;
+	margin: 300px auto 400px;
+	font-family: 'Poiret One', cursive;
+	letter-spacing: 2em;
+}
+
+h1 {
+	margin: 0px;
+}
+
+h2 {
+	font-size: 12px;
+	margin: 13px;
+	letter-spacing: 1em;
+}
+
+.summary {
+	width: 1250px;
+	color: gray;
+	margin: 800px auto;
+}
+
+.summary > p {
+	display: inline;
+	font-family: 'Poiret One', cursive;
+}
+
+a {
+	text-decoration: italic;
+	color: gray;
+}
+
+.preamble > h3, .preamble > p {
+	color: #5D8AA8; 
+}
+
+.preamble {
+	margin: 20px auto;
+}
+
+.explanation > h3, .explanation > p {
+	color: #5D8AA8; 
+}
+
+.explanation {
+	margin: 20px auto;
+}
+
+.participation > h3, .participation > p {
+	color: #5D8AA8; 
+}
+
+.participation {
+	margin: 20px auto;
+}
+
+.benefits > h3, .benefits > p {
+	color: #5D8AA8; 
+}
+
+.benefits {
+	margin: 20px auto;
+}
+
+
+.requirements > h3, .requirements > p {
+	color: #5D8AA8; 
+}
+
+.requirements {
+	margin: 20px auto;
+}
+
+
+
+
+

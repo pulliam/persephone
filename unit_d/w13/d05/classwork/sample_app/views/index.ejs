@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="SampleApp">
+<head>
+  <meta charset="UTF-8">
+  <title>sample app</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="/jquery/dist/jquery.js"></script>
+  <script src="/angular/angular.js"></script>
+  <script src="/js/app.js"></script>
+  <script src="/js/dogs_controller.js"></script>
+  <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body>
+
+  <h1 class="splash">What's up, dog?</h1>
+
+  <div ng-controller="DogsController as dogs">
+    <input type="text" ng-model="dogs.new">
+<<<<<<< HEAD
+    <button ng-click="dogs.add()">Add Dog</button>
+    <p>Dogs:</p>
+=======
+    <button ng-click="dogs.add()" id="save">Add Dog</button>
+>>>>>>> c746cc50c4d66b6ae3dae8445636b24693fa0cf1
+    <ul id="dogs">
+      <li ng-repeat="dog in dogs.all">{{dog.name}}</li>
+    </ul>
+  </div>
+
+</body>
+</html>
+

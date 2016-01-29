@@ -1,0 +1,14 @@
+{
+  "name": "wise_cow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "wise_cow.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cowsay": "^1.1.2"
+  }
+}

@@ -1,0 +1,24 @@
+body {
+	background-color: white;
+}
+
+img {
+	margin: 50px;
+}
+
+
+.movementRight{
+margin-right: -10px;
+}
+
+.movementLeft{
+margin-top: -10px;
+}
+
+.movementRigh{
+margin-left: 10px;
+}
+
+.movementDown{
+margin-top: 10px;
+}

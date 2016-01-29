@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="BrownieCornerApp">
+<head>
+	<title>Brownies</title>
+	<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="brownie_controller.js"></script>
+</head>
+<body>
+
+<div ng-controller="BrownieController as brownie">
+	<ul>
+      <li ng-repeat="brownie in brownie.brownies"><b>Type:</b> {{brownie.type}}, <b>Ready?</b> {{brownie.isReady}}, <b>Baking?</b> {{brownie.isBaking}}, <b>Eaten?</b> {{brownie.isEaten}}, <b>Special?</b> {{brownie.isSpecial}}, <b>ID:</b> {{getIndexOf(brownie)}} </li>
+    </ul>	
+</div>
+
+</body>
+</html>

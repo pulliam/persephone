@@ -1,0 +1,11 @@
+<h1><%= @venue.name %></h1>
+
+<ul>
+<% @venue.events.each do |event| %>
+  <li>
+    <%= event.performs_on %>
+    <%= link_to event.band.name, event.band %>
+  </li>
+<% end %>
+</ul>
+<a href="/venues/<%= @venue.id %>/events/new">Create a new event</a>

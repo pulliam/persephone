@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<!--HEAD -->
+<head>
+	<title>HitGif Wiki</title>
+	<!-- META Configurations -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--/META Configurations -->
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet' type='text/css'>
+	<!--/CSS -->
+
+	<!-- NAVBAR -->
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<a href="/" class="navbar-brand">HitGif</a>
+
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+        	</button>
+
+			<div class="collapse navbar-collapse navHeaderCollapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="/">Home</a></li>
+                	<li><a class="previous_page">Back</a></li>
+                	<li><a href="/aboutus">About Us</a></li>
+					<li class="dropdown">
+              		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu<b class="caret"></b></a>
+              			<ul class="dropdown-menu">
+              				<li class="dropdown-header">Navegate</li>
+              				<li><a href="/articles">All Articles</a></li>
+                			<li><a href="/categories">Categories</a></li>
+              				<!-- OPTIONS -->
+							<% if session[:user_id] %> <!-- If logged -->
+							<li><a href="/article/create">Create Own Article</a></li>
+							<li class="dropdown-header">Account</li>
+							<li><a href="/users">Search Friends</a></li>
+							<li><a href="/users/articles/<%= session[:user_id] %>">My Account</a></li>
+							<li><form action="/sessions/delete" method="POST">
+								<button class="remove_button_css" type="submit">Log Out</button>
+							</form></li>
+							<% else %> <!-- If not logged -->
+							<li class="dropdown-header">Join</li>
+							<li><a href="/login">Login</a></li>
+							<li><a href="/register">Sign Up</a></li>
+							<% end %>
+							<!--/OPTIONS -->
+              			</ul><!--/UL dropdown-->
+            		</li><!--/LI dropdown-->
+				</ul><!--/nav navbar-nav navbar-right-->
+			</div><!--/navbar-collapse navHeaderCollapse"-->
+		</div><!--/container-->
+	</div><!--navbar-inverse navbar-fixed-top-->
+<!--/NAVBAR -->
+</head>
+<!--/HEAD -->
+
+<!-- BODY -->
+<body>
+
+	<!--CONTENT -->	
+
+		<%= yield %>
+
+	<!--/CONTENT -->	
+
+	<!-- FOOTER -->
+	<div class="navbar navbar-default navbar-fixed-bottom"  id="footer-body">
+		<div class="container">
+		<a href="http://www.thaispulliam.com"><p class="navbar-text pull-left"><span class="glyphicon glyphicon-copyright-mark"></span> Site Built by Thais Pulliam</p></a>
+		<% if session[:user_id] %> <!-- If logged -->
+		<% user = User.find(session[:user_id])%>
+		<p class="navbar-text">Logged as <%= user.name %></p>
+		<% end %><!--/If logged -->
+		<a class="navbar-button btn pull-right" href="http://giphy.com/"><img class="giphy-logo" src="http://iamemmanouil.com/react-giphy/images/giphy.png"></a>
+		</div>
+	</div>
+	<!-- /FOOTER -->
+
+	<!-- SCRIPTS -->
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script language="javascript" src="/js/main.js"></script>
+	<script language="javascript" src="/js/bootstrap.js"></script>
+	<script language="javascript" src="/js/p5.min.js"></script>
+	<script language="javascript" src="/js/p5.js"></script>
+	<script language="javascript" src="/js/p5.dom.js"></script>
+	<!--/SCRIPTS -->
+
+</body>
+<!--/BODY -->
+
+</html>

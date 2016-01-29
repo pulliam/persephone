@@ -1,0 +1,14 @@
+<h1>Bands#new</h1>
+
+<%= form_for(@band) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :has_explicit_lyrics %>
+  <%= f.text_field :has_explicit_lyrics %>
+  <span>Has explicit lyrics?</span>
+  <%= label_tag "True" %>
+  <%= radio_button("band", "has_explicit_lyrics", "true") %>
+  <%= label_tag "False" %>
+  <%= radio_button("band", "has_explicit_lyrics", "false") %>
+  <%= f.submit %>
+<% end %>

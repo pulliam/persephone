@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello from Index</title>
+  <script src="/jquery.js"></script>
+  <script src="/main.js"></script>
+</head>
+<body>
+
+<ul>
+<% cheeses.forEach(function(cheese){ %>
+  <li>
+    <a href="/cheeses/<%= cheese._id %>">
+    <%= cheese.name %>
+    </a>
+  </li>
+<% }) %>
+</ul>
+
+</body>
+</html>
+

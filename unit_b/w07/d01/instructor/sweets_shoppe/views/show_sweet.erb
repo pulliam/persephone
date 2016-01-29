@@ -1,0 +1,9 @@
+<h1><%= @sweet["name"] %></h1>
+
+<img src="<%= @sweet["img_url"] %>" alt="sweeeet">
+<p>Flavor: <%= @sweet["flavor"] %></p>
+
+<form action="/sweets/<%=@sweet["id"] %>" method="POST">
+  <input type="hidden" name="_method" value="delete">
+  <button>Delete Cupcake</button>
+</form>

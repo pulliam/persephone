@@ -1,0 +1,28 @@
+<img src="../img/dough_logo.png">
+
+<% @donuts.each do |item| %>
+<ul>
+<li><a href="./donuts/<%=item[:id]%>"><%= item[:flavor] %></a> donut is $<%= item[:price] %>.00</li>
+</ul>
+<%end%>
+
+
+
+
+<p>Add your own:</p>
+<form method="POST" action="/donuts">
+	<label for="flavor">Flavor:</label>
+		<input type="text" name="flavor" id="flavor">
+	<label for="flavor">Price:</label>
+		<input type="text" name="price" id="price">
+
+  <select name="redirect">
+    <option value="here">Redirect Back Here</option>
+    <option value="there">Redirect to Donut Page</option>
+  </select>
+  
+	<input type="submit">
+</form>
+
+
+

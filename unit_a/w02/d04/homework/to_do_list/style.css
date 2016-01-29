@@ -1,0 +1,17 @@
+.marked-as-done {
+	text-decoration: line-through;
+	color: red;
+	font-size: 18px;
+}
+
+li {
+	color: #34495e;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+body {
+	background-color: aliceblue;
+	color: #34495e;
+
+}

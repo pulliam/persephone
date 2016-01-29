@@ -1,0 +1,67 @@
+<div class="container wrapper">
+<div class="jumbotron jumbotronwhite">
+
+<!--Login Successful-->
+<% if params[:message] %>
+	<%= @message %>
+<% end %>
+<!--/Login Successful-->
+
+<h1>Welcome to HitGif</h1>
+<br>
+<!-- href="/article/create?gif=https://media.giphy.com/media/Y376OHpjmYBiM/giphy.gif"
+src="https://media.giphy.com/media/Y376OHpjmYBiM/giphy.gif" -->
+
+<% if session[:user_id] %>
+	<p>Click to Create an Article on this GIF</p>
+	<a id="link-this">
+	<img class="article-gif-each-border img-rounded" id="gif-this"></a><br><br>
+	<button id="reload">Or Randomize Gif</button>
+	<script>
+		function setup() {
+			noCanvas();
+		  	var url = api + apiKey + query;
+		  	loadJSON(url, function(giphy) {
+		  		imgTag = document.getElementById("gif-this");
+				linkTag = document.getElementById("link-this");
+				imgTag.setAttribute('src', ''+ lala + '');
+				linkTag.setAttribute('href', '/article/create?gif='+ lala + '');
+		    	lala = giphy["data"]["image_original_url"];
+		    })
+		};
+		document.getElementById("reload").addEventListener('click', 
+			function(){
+		  		var url = api + apiKey + query;
+		  		loadJSON(url, function(giphy) {
+		  			randomIndex = Math.floor(Math.random() * arrayOfTags.length);
+					query = arrayOfTags[randomIndex];
+		  			imgTag = document.getElementById("gif-this");
+					linkTag = document.getElementById("link-this");
+					imgTag.setAttribute('src', ''+ lala + '');
+					linkTag.setAttribute('href', '/article/create?gif='+ lala + '');
+		    		lala = giphy["data"]["image_original_url"];
+		 	    	});
+			})
+	</script>
+<% else %>
+	<h2><a href="/login">Login</a> or <a href="/register">Sign up</a> to get started...</h2>
+	<h2>This is just an example of what you can create an article on!</h2>
+	<img class="article-gif-each-border img-rounded" id="gif-this">
+		<script>
+		function setup() {
+			noCanvas();
+		  	var url = api + apiKey + query;
+		  	loadJSON(url, function(giphy) {
+		  		imgTag = document.getElementById("gif-this");
+				imgTag.setAttribute('src', ''+ lala + '');
+		    	lala = giphy["data"]["image_original_url"];
+		    })
+		};
+	</script>
+<% end %>
+
+</div>
+</div>
+
+
+

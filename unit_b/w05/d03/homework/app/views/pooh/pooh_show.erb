@@ -1,0 +1,12 @@
+<h1>What's your favorite Winnie?</h1>
+<%if @winnie %>
+	<div>
+	Your Winnie name is: <%= @winnie[:name].capitalize  %>
+    <br/>
+    It is know for being in the mood: <%= @winnie[:mood].capitalize  %>
+    <br/>
+    It's species: <%= @winnie[:animal].capitalize  %>
+  </div>
+<% else %>
+  <p>There is no Winnie with such ID!</p>
+<% end %>

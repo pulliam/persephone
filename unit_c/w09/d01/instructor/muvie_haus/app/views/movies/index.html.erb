@@ -1,0 +1,11 @@
+<%= @notice if @notice  %>
+<div class="now-playing">
+    <% @movies.each do |movie| %>
+  <div>
+      <a href="<%= movie_path(movie.id) %>"><img src="<%= movie.img_url %>" alt="<%= movie.title %>"></a>
+      <%= form_for movie, url: movie_path(movie), html: {method: "delete"} do |f| %>
+        <%=f.submit "Remove From Now Playing" %>
+      <% end %>
+  </div>
+    <% end %>
+</div>

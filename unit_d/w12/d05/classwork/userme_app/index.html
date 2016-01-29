@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="UsermeApp">
+<head>
+	<title>User Me</title>
+	<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+	<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="users_controller.js"></script>
+</head>
+<body>
+	<div ng-controller="UsersController as users">
+		<h1>{{users.name}}</h1>
+		<button ng-click="users.greet()">Greet</button>
+		<button ng-click="users.fetch()">Get Users</button>
+		<ul>
+			<li ng-repeat="user in users.all">{{user.user.name.title}} {{user.user.name.first}} {{user.user.name.last}}</li>
+		</ul>
+	</div>
+</body>
+</html>

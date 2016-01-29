@@ -1,0 +1,107 @@
+body {
+  font-size: 14px;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, button, input, img {
+  margin: 1rem 0.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #F65;
+  background: #333;
+  padding: 0.5rem;
+}
+
+button, input[type=submit] {
+  border: 0px;
+  background: #F65;
+  color: #FFF;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+input {
+  padding: 0.5rem
+}
+
+a {
+  color: #369;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #F65;
+}
+
+img {
+  border: 1px solid #369;
+  border-radius: 50%;
+  max-height: 150px;
+}
+
+em, strong {
+  color: #369;
+}
+
+div {
+  background: #FF9;
+  width: 50%;
+  padding: 2rem;
+  border-top: 3px solid #CCC;
+}
+
+span {
+  background: #CCC;
+  padding: 0.5rem;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+ul > li {
+  margin: 0.75em 0;
+  list-style-type: circle;
+}
+
+/* 
+Styling Ordered List Numbers:
+http://www.456bereastreet.com/archive/201105/styling_ordered_list_numbers/ 
+*/
+ol {
+  counter-reset: li;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+ol > li {
+  position: relative;
+  margin: 0 0.5em 1em 1em;
+  padding: 0 0;
+  list-style: none;
+  border-top: 1px solid #F65;
+  min-width: 300px;
+  max-width: 75%;
+  line-height: 2em;
+
+}
+
+ol > li:before {
+  content: counter(li);
+  counter-increment: li;
+  background: #F65;
+  padding: 0.5em 0.75em;
+  margin: 0 0.5em 0 0;
+  color: #FFF;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+

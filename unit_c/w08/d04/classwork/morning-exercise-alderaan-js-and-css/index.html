@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Alderaan</title>
+  <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="top-bar flash"></div>
+
+  <div id="alderaan" class="planet">
+    <p class="planet-name">Alderaan</p>
+  </div>
+
+  <div id="death-star" class="planet">
+    <p class="planet-name">Death Star</p>
+  </div>
+
+  <a href="/confessions" id="tell">Tell!</a>
+
+  <button id="never">Never</button>
+
+  <form method="POST" action="/coordinates" id="secret-coordinates">
+    <input type="text" name="location" hidden>
+  </form>
+
+  <form method="POST" action="/messages" id="secret-message">
+    <input type="text" name="plea" hidden>
+  </form>
+
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+body {
+  background-color: rgb(255, 210, 210);
+  font-family: Helvetica, Arial, sans-serif;
+  margin:0;
+}
+img {
+  /* Setting a maximum width for ALL IMAGES (relative to their parent elements) */
+  max-width: 100%;
+}
+
+.wrapper {
+  /* Setting a maximum width for our div (relative to parent) */
+  max-width: 800px;
+  /* sets the margins of our div to 0 top & bottom, automatic on right & left (centers div) */
+  margin: 0 auto;
+  /* This allows us to absolutely position child elements within the div! */
+  position: relative;
+}
+
+.header {
+  background: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+
+.header h1 {
+  font-family: "Courier New", Arial, sans-serif;
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 60px;
+  background-color: black;
+  color: #fff;
+}
+
+.header h2 {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 30px;
+}
+.header p {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 20px; 
+  background-color: rgba(255,255,200,0.5);
+}
+
+.main-content {
+  /* 
+    Take up a little more than 2/3 of the parent 
+    container (.wrapper) 
+  */
+  width:65%;
+  /* 
+   Postions the element relative to its `closest positioned 
+   parent`.
+   **REMOVES the element from the DOCUMENT'S FLOW!**
+   It'll stop taking up its original space on the page. 
+   Other elements will "flow" up to take its place. 
+  */
+  position: absolute;
+  left: 0;
+  /* 
+    Note: Padding + width + border + margin = actual size 
+    of element on the page. Will cover ways to get around 
+    doing that math later. 
+  */
+  padding: 0 2.5% 100px;
+}
+
+.main-content h1 {
+  font-weight: lighter;
+  color: #C24;
+  font-size: 40px;
+  border-bottom: 1px solid #C24;
+}
+
+.main-content h2 {
+  font-weight: lighter;
+  font-style:oblique;
+  color: #E58;
+  font-size: 20px;
+}
+
+ol {
+  line-height: 2em;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgba(255,255,255,0.75);
+  border: 2px dotted pink;
+}
+ol ul {
+  line-height: 2em;
+  font-size: 16px;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.external-links {
+  /* Take up 30% of the page! */
+  width: 30%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+}
+.external-links ul {
+  list-style: none;
+  padding-left: 0;
+}
+.external-links a {
+  text-decoration: none;
+  line-height: 2em;
+  color: #C24;
+}
+
+/* 
+ This element below is the `fixed` bar at the bottom -
+ it's positioned relative to the `viewport`, or 
+ everything the user can see on your screen.
+ */
+.sticky {
+  background-color: black;
+  color: white;
+  text-align: center;
+  /* Setting position */
+  position:fixed;
+  /* Stick to the bottom! */
+  bottom: 0px;
+  /* Take up the whole screeen */
+  width: 100%;
+}

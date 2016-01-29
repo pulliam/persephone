@@ -1,0 +1,14 @@
+<h1>Winnieeee!</h1>
+<ul>
+<% @pooh.each do |hash| %>
+	<li>
+		<b>Id:</b> <%= hash[:id] %>
+		<br/>
+		<b>Name:</b> <%= hash[:name].capitalize %>
+		<br/>
+		<b>Mood:</b> <%= hash[:mood].capitalize %>
+		<br/>
+		<b>Animal:</b> <%= hash[:animal].capitalize %>
+	</li>
+<%end%>
+</ul>

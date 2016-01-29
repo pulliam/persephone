@@ -1,0 +1,10 @@
+<ul>
+<% @fanny_packs.each do |fanny_pack| %>
+  <li>
+    <a href="/fanny_packs/<%= fanny_pack["id"] %>">
+      <%= fanny_pack["color"] %>
+      <%= fanny_pack["material"] %>
+    </a>
+  </li>
+<% end %>
+</ul>

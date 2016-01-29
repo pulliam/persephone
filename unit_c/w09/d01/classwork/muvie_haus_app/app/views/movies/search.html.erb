@@ -1,0 +1,25 @@
+<h1>Movie: "<%= @title %>"</h1>
+
+<p><%= @runtime %></p>
+<p><%= @rating %></p>
+<p><%= @year %></p>
+<p><%= @cast %></p>
+<img src="<%= @img %>">
+
+<br><br>
+
+<% if session[:user_id] %>
+	<%= form_for @movie, url: {action: "create"} do |f| %>
+	<%= f.hidden_field :title, :value => @title %>
+	<%= f.hidden_field :runtime, :value => @runtime %>
+	<%= f.hidden_field :rating, :value => @rating %>
+	<%= f.hidden_field :year, :value => @year %>
+	<%= f.hidden_field :cast, :value => @cast %>
+	<%= f.hidden_field :img_url, :value => @img %>
+	<%= f.submit "Create this Movie" %>
+	<% else %>
+<h1> You cant create this </h1>
+	<% end %>
+
+	
+<% end %>

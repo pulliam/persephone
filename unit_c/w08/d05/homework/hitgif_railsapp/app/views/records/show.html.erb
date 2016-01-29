@@ -1,0 +1,23 @@
+<div class="container wrapper">
+<div class="jumbotron jumbotronwhite lessmarginontop">
+
+<!--Title of Article-->
+<div class="articles-header">
+	<% if @article.gif != "empty" %>
+	<img class="article-gif-each-border img-rounded" src="<%= @article.gif %>">
+	<% end %>
+	<h2><%= @record.name %></h2>
+</div>
+<!--/Title of Article-->
+
+<!--Content of Article In Markdown-->
+<div class="articles-body">
+<%= markdown(@record.content) %>
+	<p>Created by: <%= @article.user.name %> At: <%= @article.time_created.strftime("On %m/%d/%Y At %I:%M%p") %></p>
+	<p>Last updated by: <%= @record.user.name %> At: <%= @record.time_created.strftime("On %m/%d/%Y At %I:%M%p") %></p>
+</div>
+<!--/Content of Article In Markdown-->
+
+
+</div>
+</div>

@@ -1,0 +1,27 @@
+<% if session[:user_id] %>
+<!-- if there is  session -->
+<!--do something here if user is logged.-->
+
+<h1>Hey there <%= @user.name %>! Welcome to 200Cupid!</h1>
+<% else %>
+<h1>Hi and welcome to 200Cupid!</h1>
+<% end %>
+
+<img class="med-img" src="/img/heart.png" alt="heart">
+
+<% if @user %>
+<p><a href="/users">View users!</a></p>
+<p><a href="/visits">Who's visited you?</a></p>
+
+<!-- to log out, you delete the session! -->
+<form action="/sessions" method="POST">
+<input type="hidden" name="_method" value="delete">
+<button>Log Out</button>
+</form>
+
+<% end %>
+
+<% unless @user %>
+<p><a href="/users/new">Sign Up!</a></p>
+<p><a href="/login">Log In</a></p>
+<% end %>

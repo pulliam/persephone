@@ -1,0 +1,19 @@
+<div class="container wrapper">
+<div class="jumbotron jumbotronwhite">
+
+	<h2>Articles Under Category: <%= @category.name %></h2>
+
+	<div class="categories-body">
+	<% if @articles.any? %>
+	<ul>
+		<% @articles.each do |article| %>
+			<li class="list-unstyled lead"><a href="/articles/<%= article.id %>"><p class="no-decoration-link"><%= article.name %></p></a></li>
+		<% end %>
+	</ul>
+	<% else %>
+		<p>Sorry this category is still empty!</p>
+	<% end %>
+	</div>
+
+</div>
+</div>

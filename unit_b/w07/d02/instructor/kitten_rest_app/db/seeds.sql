@@ -1,0 +1,4 @@
+INSERT INTO kittens (name, age, fuzziness, img_url) VALUES ("Mittens", 1, 10, "http://www.warrenphotographic.co.uk/photography/bigs/15707-Cute-fluffy-silver-tortoiseshell-kitten-white-background.jpg");
+INSERT INTO kittens (name, age, fuzziness, img_url) VALUES ("Fluffy", 1, 10, "http://www.lovethispic.com/uploaded_images/28723-Fluffy-Kitten.jpg");
+INSERT INTO kittens (name, age, fuzziness, img_url) VALUES ("Powderpuff", 1, 10, "https://sphynx-expert.s3.amazonaws.com/2015/Jul/fluffy_kitten-1435946299808.jpg");
+INSERT INTO kittens (name, age, fuzziness, img_url) VALUES ("Fuzzface", 1, 10, "https://s-media-cache-ak0.pinimg.com/236x/8b/43/c9/8b43c96b3ab6cd0c052143a1f1bd30bd.jpg");

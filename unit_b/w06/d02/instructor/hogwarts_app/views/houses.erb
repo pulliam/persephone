@@ -1,0 +1,15 @@
+<h1>Here are the houses</h1>
+
+<!-- render the house names as li tags -->
+<ul>
+<% @houses.each do |house| %>
+
+  <li>
+    <img src="<%= house['image_url'] %>">
+    <a href="/houses/<%= house['id'] %>">
+      <%= house['name'] %>
+    </a>
+  </li>
+
+<% end %>
+</ul>

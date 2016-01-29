@@ -1,0 +1,11 @@
+<h1>Movies Playing</h1>
+
+<% @movies.each do |movie| %>
+<p><%= link_to movie.title, movie %></p>
+<% end %>
+
+<%= form_tag("/search", method: "get") do %>
+  <%= label_tag(:q, "Movie:") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Search") %>
+<% end %>

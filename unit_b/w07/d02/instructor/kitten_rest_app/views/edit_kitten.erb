@@ -1,0 +1,19 @@
+<h1>Editing <%= @kitten["name"] %>:</h1>
+
+<form action="/kittens/<%= @kitten["id"] %>" method="POST">
+
+  <input type="hidden" name="_method" value="patch">
+
+  <input type="text" name="name" placeholder="Kitten Name" value="<%= @kitten["name"] %>">
+  <input type="text" name="img_url" placeholder="Kitten pic" value="<%= @kitten["img_url"] %>">
+  <label for="fuzziness">Fuzziness:</label>
+  <input id="fuzziness" type="number" name="fuzziness" value="<%= @kitten["fuzziness"] %>">
+  <label for="age">Age:</label>
+  <input id="age" type="number" name="age" value="<%= @kitten["age"] %>">
+  <button>Update Kitten</button> 
+</form>
+
+<form action="/kittens/<%= @kitten["id"] %>" method="POST">
+  <input type="hidden" name="_method" value="delete">
+  <button>Delete Kitten</button>
+</form>

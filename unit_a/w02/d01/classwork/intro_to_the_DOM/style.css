@@ -1,0 +1,44 @@
+#headline{
+  font-size: 60px;
+}
+
+.right{
+  position: relative;
+  width: 60%;
+  top: -20px;
+  right: -40%;
+}
+
+.left{
+  position: absolute;
+  width: 38%;
+  top: 5px;
+  left: 5px
+}
+
+.list-container{
+  padding: 10px;
+  margin: 10px;
+}
+
+.container{
+  width: 1000px;
+  min-height: 200px;
+  border: 1px dashed black;
+  padding: 10px;
+  margin: 10px;
+  position: relative;
+}
+
+.shiny {
+  font-family: fantasy;
+  color: pink;
+}
+
+.big {
+  font-size: 100px;
+}
+
+.small {
+  font-size: 10px;
+}

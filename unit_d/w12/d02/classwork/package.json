@@ -1,0 +1,19 @@
+{
+  "name": "classwork",
+  "version": "1.0.0",
+  "description": "- Use NPM to create package.json files - Add dependencies to package.json files - Explain the purpose of package.json - Use the npm modules to retrieve and process data from third parties - Write asynchronous code with callbacks - Use promises to handle deferred and asychronous computations",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^0.19.0",
+    "request": "^2.67.0"
+  },
+  "devDependencies": {
+    "jasmine": "^2.4.1"
+  }
+}

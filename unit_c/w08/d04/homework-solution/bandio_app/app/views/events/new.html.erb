@@ -1,0 +1,19 @@
+<h1>Events#new</h1>
+<%= form_for(@event) do |f| %>
+  <%= hidden_field_tag :venue_id, @venue.id %>
+  <%= label_tag "performs_on" %>
+  <%= date_field "event", "performs_on" %>
+  <span>Is alcohol served?</span>
+  <%= label_tag "Yes" %>
+  <%= radio_button "event", "is_alcohol_served", "true" %>
+  <%= label_tag "No" %>
+  <%= radio_button "event", "is_alcohol_served", "false" %>
+  <label for="event_band_id">Band</label>
+  <select name="event[band_id]" id="event_band_id">
+    <% @bands.each do |band| %>
+      <option value="<%= band.id %>"><%= band.name %></option>
+    <% end %>
+  </select>
+  <br>
+  <%= f.submit %>
+<% end %>

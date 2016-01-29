@@ -1,0 +1,21 @@
+<% if @teacher %>
+<h1>The Great <%=params[:each].capitalize%></h1>
+<div>
+	<b>Name:</b> <%= @teacher[:name].capitalize %>
+	<br/>
+	<b>Code Name:</b> <%= @teacher[:codename].capitalize %>
+	<br/>
+	<b>Super Power:</b> <%= @teacher[:superpower].capitalize %>
+	<br/>
+	<b>Weapon:</b> <%= @teacher[:weapon].capitalize %>
+	<br/>
+	<b>Weakness:</b> <span><% @teacher[:weaknesses].each do |listing| %>
+      <%= listing.capitalize %>
+    </span> <% end %>
+    <br/>
+	<b>Undercover:</b> <%= @teacher[:undercover] %>
+	<br/>
+</div>
+<% else %>
+<h1>The Great <%=params[:each].capitalize%> doesn't teach at G.A!</h1>
+<% end %>

@@ -1,0 +1,9 @@
+<h1><%= @artist.name %></h1>
+<p>He Is <%= @artist.nationality %></p>
+<p>He has painted the pieces: 
+<% @artist.paintings.each do |painting| %>
+<span><%= painting.title %>.</span>
+<% end %>
+</p>
+
+<a href="/paintings/new/artist/<%= @artist.id %>">Create Painting</a>

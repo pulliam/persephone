@@ -1,0 +1,30 @@
+body {
+    background: blanchedalmond;
+}
+header, footer {
+    background: black;
+    color: white;
+}
+div, header, footer {
+    width: 400px;
+}
+.container {
+    background: aliceblue;
+    position: relative;
+    height: 200px;
+}
+.div-one {
+    background: rebeccapurple;
+    color: wheat;
+    width: 50%;
+    position:absolute;
+    top: 0;
+    left: 0;
+}
+.div-two {
+    background: greenyellow;
+    width: 50%;
+    position:absolute;
+    top: 0;
+    right: 0;
+}

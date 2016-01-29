@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shoutout!</title>
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/bower_components/handlebars/handlebars.js"></script>
+  <script src="/js/main.js"></script>
+
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Shoutouts!</h1>
+
+    <% if (name) { %>
+      <h3>Hi, <%= name %>!</h3>
+    <% } %>
+
+    <h2><em>To ya'll, with love, from ya'll.</em></h2>
+    <button id="get-shoutouts">Get Shoutouts!</button>
+    <ul id="random-shoutouts">
+      <script id="li-template" type="x-template">
+      <li>{{shoutout.content}}</li>
+      </script>
+    </ul>
+  </div>
+  <div class="wrapper">
+  <% if (name) { %>
+    <h2>Leave a shoutout for a classmate!</h2>
+    <form action="/shoutouts" method="POST">
+      <select name="student" id="student">
+        <% students.forEach(function(student) { %>
+          <option name="<%= student.name %>"><%= student.name %></option>
+        <% }) %>
+      </select>
+      <input type="text" name="content" placeholder="Write your shoutout here!">
+      <button>Submit</button>
+    </form>
+    <h3><a href="/logout">Log Out</a></h3>
+  <% } else { %>
+    <h2>Sign in to leave a shoutout:</h2>
+    <form action="/login" method="POST">
+      <input type="text" name="username">
+      <input type="password" name="password">
+      <button>Login</button>
+    </form>
+  <% } %>
+  </div>
+</body>
+</html>

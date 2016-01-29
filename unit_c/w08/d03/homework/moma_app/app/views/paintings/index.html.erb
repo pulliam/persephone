@@ -1,0 +1,5 @@
+<h1>Paintings</h1>
+
+<% @paintings.each do |painting| %>
+	<p><a href="paintings/<%= painting.id %>"><%= painting.title %></a>, by <%=painting.artist.name%></p>
+<% end %>

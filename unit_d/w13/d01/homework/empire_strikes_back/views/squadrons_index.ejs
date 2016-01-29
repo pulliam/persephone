@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ALL SQUADRONS</title>
+</head>
+<body>
+
+<h1>Squadrons</h1>
+<% squadrons.forEach(function(squadron){ %>
+	<p><a href="/<%= squadron._id %>/pilots"><%= squadron.name %></a></p>
+<% }) %>
+
+<p><a href="/new">Create New</a>
+
+</body>
+</html>

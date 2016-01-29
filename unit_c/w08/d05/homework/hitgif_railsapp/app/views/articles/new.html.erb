@@ -1,0 +1,28 @@
+<div class="container wrapper">
+<div class="jumbotron jumbotronwhite lessmarginontop">
+
+  <h2>Create your own article</h2>
+
+  <% if @article_gif %> 
+    <img class="article-gif-each-border img-rounded" style="max-width:300px;"src="<%= @article_gif %>" style="max"><br><br>
+  <% end %> 
+
+<% form_for @article, url: {action: "create"} do |f| %>
+  <% if @article_gif %> 
+    <%= f.hidden_field_tag :gif, @article_gif %>
+  <% else %>
+    <%= f.text_field :gif, :placeholder => "Gif URL"  %>
+  <% end %> 
+  <%= f.text_field :name, :placeholder => "Give me a Title" %>
+  <%= f.radio_button :category, "1", :checked => true %> Education
+  <%= f.radio_button :category, "2" %> Sports
+  <%= f.radio_button :category, "3" %> Lifestyle
+  <%= f.radio_button :category, "4" %> Animals
+  <%= f.radio_button :category, "5" %> Tv
+  <%= f.radio_button :category, "6" %> Travel
+  <%= f.text_area :content, :value => "Your Article in Markdown", size: "90x10", :html => { :id => "article-content"} %>
+  <%=  f.submit "Create Article" %>
+<% end %>
+
+</div>
+</div>

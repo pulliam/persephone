@@ -1,0 +1,36 @@
+body {
+  text-align: center;
+  font-family: fantasy;
+  background-image: radial-gradient(#111, black);
+}
+.background {
+  background-image: radial-gradient(white, yellow, black);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  opacity: 0;
+  transition: opacity 4s;
+}
+.on {
+  opacity: 1;
+}
+.lightbulb {
+  position: relative;
+  height: 500px;
+  width: 300px;
+  margin: 2em auto;
+  background: url('img/lightbulb.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+h1 {
+ position: relative;
+ transition: color 1s;
+}
+
+.glow {
+  color: white;
+  text-shadow: 1px 0px 20px #FFC;
+}

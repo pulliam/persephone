@@ -1,0 +1,7 @@
+<h1>Create Your Dream Salad</h1>
+
+<%= form_for @salad, url: {action: "create"} do |f| %>
+  <%= f.label :leafy_green %>
+  <%= f.text_field :leafy_green %>
+  <%= f.submit "Make New Salad" %>
+<% end %>

@@ -1,0 +1,40 @@
+{
+    "results": [
+        {
+            "user": {
+                "gender": "female",
+                "name": {
+                    "title": "mrs",
+                    "first": "jo",
+                    "last": "powell"
+                },
+                "location": {
+                    "street": "8519 sunset st",
+                    "city": "round rock",
+                    "state": "idaho",
+                    "zip": 23538
+                },
+                "email": "jo.powell@example.com",
+                "username": "heavygorilla312",
+                "password": "blanche",
+                "salt": "wOl5GI1H",
+                "md5": "576eb65cc3a52790c0608ce68e490513",
+                "sha1": "3996eb22e16b134a8271a98ee43295f6de35348a",
+                "sha256": "2e931ba3df001aa2d79c39418336f78295ff3f0ddf1d50e42f982c033b0034a0",
+                "registered": 1090907398,
+                "dob": 1403504474,
+                "phone": "(989)-337-7212",
+                "cell": "(181)-873-2484",
+                "SSN": "331-32-3934",
+                "picture": {
+                    "large": "https://randomuser.me/api/portraits/women/76.jpg",
+                    "medium": "https://randomuser.me/api/portraits/med/women/76.jpg",
+                    "thumbnail": "https://randomuser.me/api/portraits/thumb/women/76.jpg"
+                }
+            }
+        }
+    ],
+    "nationality": "US",
+    "seed": "f93041f4afc33cd607",
+    "version": "0.7"
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>200Cupid</title>
+  <script src="/js/jquery.js"></script>
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="pure-menu pure-menu-horizontal">
+    <a href="/" class="pure-menu-heading pure-menu-link">200 Cupid</a>
+    <ul class="pure-menu-list">
+      <% if @current_user %>
+        <li class="pure-menu-item">
+          <form method="POST" action="/sessions">
+            <input type="hidden" name="_method" value="delete">
+            <button class="pure-button">Log Out</button>
+          </form>
+        </li>
+      <% else %>
+        <li class="pure-menu-item"><a href="/login" class="pure-menu-link">Login</a></li>
+        <li class="pure-menu-item"><a href="/signup" class="pure-menu-link">Signup</a></li>
+      <% end %>
+    </ul>
+  </div>
+
+  <div class="wrapper">
+    <%= yield %>
+  </div>
+</body>
+</html>

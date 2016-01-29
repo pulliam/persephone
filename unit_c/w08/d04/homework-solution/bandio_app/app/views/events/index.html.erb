@@ -1,0 +1,15 @@
+<h1>Events#index</h1>
+<ul>
+<% @events.each do |event| %>
+  <li>
+    <p>
+      <a href="/bands/<%= event.band.id %>">
+        <%= event.band.name %>
+      </a> plays at
+      <a href="/venues/<%= event.venue.id %>">
+        <%= event.venue.name %>
+      </a> on <%= event.performs_on %>
+    </p>
+  </li>
+<% end %>
+</ul>

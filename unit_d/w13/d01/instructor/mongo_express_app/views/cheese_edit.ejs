@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <script src="/jquery.js"></script>
+  <script src="/main.js"></script>
+</head>
+<body>
+
+  <!-- allow method override. query params will be in req.query -->
+  <form method="POST" action="/cheeses/<%= cheese._id %>?_method=PATCH">
+    <!-- this will be in req.body -->
+    <input type="text" name="cheese[name]" value="<%= cheese.name %>">
+    <input type="submit" value="update">
+  </form>
+
+</body>
+</html>

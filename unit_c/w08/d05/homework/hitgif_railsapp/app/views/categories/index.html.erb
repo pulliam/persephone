@@ -1,0 +1,20 @@
+<div class="container wrapper">
+<div class="jumbotron jumbotronwhite">
+
+<!-- Title of Page -->
+<div class="categories-header">
+	<h2>Select a category</h2>
+</div>
+<!--/Title of Page-->
+
+<!-- Body of Page -->
+<div class="categories-body">
+	<ul class="list-inline">
+	<% @categories.each do |category| %>
+	<li class="list-unstyled lead"><a href="/categories/articles/<%= category.id %>"><p class="no-decoration-link"><%= category.name %></p></a></li>
+	<% end %>
+	</ul>
+</div>
+<!--/Body of Page-->
+</div>
+</div>

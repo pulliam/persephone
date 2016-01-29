@@ -1,0 +1,16 @@
+<% if @house %>
+  <p>Welcome to <%= @house['name'] %></p>
+<% end %>
+
+<h1>students</h1>
+<ul>
+<% @students.each do |student| %>
+  <li>
+    <%= student['name']  %>
+    <form method="POST" action="/students/<%= student['id'] %>">
+      <input type="hidden" name="spell" value="avadah kadavra">
+      <button>Delete</button>
+    </form>
+  </li>
+<% end %>
+</ul>

@@ -1,0 +1,11 @@
+<% if @dog %>
+  <div class="dog">
+    Name: <%= @dog["name"] %>
+    <br/>
+    Breed: <%= @dog["breed"] %>
+    <br/>
+    Sex: <%= @dog["sex"] %>
+  </div>
+<% else %>
+  <h1>This isn't the dog you're looking for.</h1>
+<% end %>
