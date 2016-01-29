@@ -1,3 +1,9 @@
+All my coding exercises during my time at General Assembly.
+
+-----------------------------------------------------------------
+
+
+
 ![GA Logo](https://github.com/generalassembly/ga-ruby-on-rails-for-devs/raw/master/images/ga.png "GeneralAssemb.ly")
 
 # WDI Persephone Class Repository
@@ -10,11 +16,6 @@ samples, and other resources will live here.
 Welcome to the WDI Persephone class repository. This is where
 we will store the information you need as students. This includes important
 links and readings, in-class examples, exercises, labs, homework and projects.
-
-<!--In order to submit your homework to this repo and share it with your
-instructional team and classmates, please follow the
-**[Homework Submission Process](homework_submission_process.md)**
-*[note: this document has not been uploaded yet]*. -->
 
 ### Contents
 
@@ -137,3 +138,4 @@ computer, try [Atom] [2].
 
 [1]: http://daringfireball.net/projects/markdown/    "Markdown"
 [2]: https://atom.io/                                 "Atom"
+
